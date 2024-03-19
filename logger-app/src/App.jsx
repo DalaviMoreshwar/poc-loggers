@@ -1,4 +1,5 @@
 import "./App.css";
+import CacheUsage from "./CacheUsage";
 import useCookie from "./hooks/useCookie";
 import { ConsoleLogger } from "./utils/logger";
 
@@ -22,6 +23,8 @@ function App() {
       <h2>{usename}</h2>
       <button onClick={() => setUserName("Martini")}>Update Username</button>
       <button onClick={deleteUsername}>Delete Username</button>
+
+      <CacheUsage />
     </>
   );
 }
