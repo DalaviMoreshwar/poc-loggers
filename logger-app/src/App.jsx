@@ -2,6 +2,7 @@ import "./App.css";
 import CacheUsage from "./CacheUsage";
 import useCookie from "./hooks/useCookie";
 import { ConsoleLogger } from "./utils/logger";
+import Auth from "./hooks/sso";
 
 function App() {
   const logger = new ConsoleLogger();
@@ -25,6 +26,7 @@ function App() {
       <button onClick={deleteUsername}>Delete Username</button>
 
       <CacheUsage />
+      <Auth />
     </>
   );
 }
