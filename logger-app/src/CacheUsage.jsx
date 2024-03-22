@@ -10,10 +10,13 @@ function CacheUsage() {
 
   return (
     <div>
+      <h1>Cached Fetch</h1>
       {data && (
         <>
-          <p>{data.title}</p>
+          <h2>{data.title}</h2>
+          <p>${data.price}</p>
           <img src={data.thumbnail} alt={data.title} />
+          <p>{data.description}</p>
         </>
       )}
     </div>
